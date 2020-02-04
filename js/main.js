@@ -2,6 +2,7 @@ let secretNumber = Math.floor(Math.random() * 100) + 1;
 let guessCount = 1;
 const guessField = document.querySelector('#guessField');
 const guessSubmit = document.querySelector('.guessSubmit');
+const restartSubmit = document.querySelector('.restartSubmit');
 const guessHistory = document.querySelector('#historyList');
 const isCorrect = document.querySelector('#isCorrect');
 const hint = document.querySelector('#hint');
@@ -51,6 +52,7 @@ function guessCheck(){
     guessField.focus();
 }
     guessSubmit.addEventListener('click',guessCheck);
+    restartSubmit.addEventListener('click',resetGame);
 
     function gameOver(){
         guessSubmit.disabled = true;
