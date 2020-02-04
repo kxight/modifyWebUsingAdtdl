@@ -9,14 +9,20 @@
     
 }
 
-.restartSubmit {
-    margin: 10px;
-    
-}
-
 .rule{
     font-size: 20px;
     font-weight: lighter;
+    width: 100%;
+}
+
+#guessField{
+    margin: 0 auto;
+}
+
+#newGameBtn {
+    margin: 10px;
+    visibility: hidden;
+    
 }
 
 #hint {
